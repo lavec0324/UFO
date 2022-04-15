@@ -24,7 +24,7 @@ function buildTable(data) {
     });
 
 function handleClick() {
-    // Grab the datetime value from the filter
+    // Grab the datetime value from the filter - Need to add to html
     let date = d3.select("#datetime").property("value");
     let filteredData = tableData;
     
@@ -42,7 +42,7 @@ function handleClick() {
     buildTable(filteredData);
 }
 
-// Listen for the event (form button)
+// Listen for the event (form button) - Need to add to html
 d3.selectAll("#filter-btn").on("click",handleClick);
 
 // Build table
