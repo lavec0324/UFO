@@ -35,5 +35,5 @@ One drawback of this webpage:
 
 Two additional recommendations:
 
-* Use the existing data.js data as list options with each one of the filter searches so that only available filter will be available.
+* Use the existing data.js data as list options with each one of the filter searches so that only available data can be filtered.
 * For the date filter use a range instead of an exact date.
