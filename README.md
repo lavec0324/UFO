@@ -25,7 +25,7 @@ That listener invokes another function that stores the updated filters and aggre
 
 Finally, the above will call a filtered table function to present the filtered results:
 
-![](https://https://github.com/lavec0324/UFO/blob/main/static/images/filter_updates.PNG)
+![](https://github.com/lavec0324/UFO/blob/main/static/images/filter_updates.PNG)
 
 ## Summary
 
