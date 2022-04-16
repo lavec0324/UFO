@@ -31,8 +31,9 @@ Finally, the above will call a filtered table function to present the filtered r
 
 One drawback of this webpage:
 
-* 
+* The filtered criteria must be precise.  There is no validation nor is their a list selection available.
 
 Two additional recommendations:
 
-* 
+* Use the existing data.js data as list options with each one of the filter searches so that only available filter will be available.
+* For the date filter use a range instead of an exact date.
