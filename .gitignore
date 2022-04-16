@@ -6,5 +6,5 @@
 # User-specific files
 # config.py
 # practice.ipynb
-gitattributes
-app_old.js
+gitattributes*
+app_old*
