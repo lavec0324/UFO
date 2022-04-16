@@ -63,19 +63,22 @@ function filterTable() {
     // 9. Loop through all of the filters and keep any data that
 // matches the filter values
 
-    filteredData = filteredData.filter(({
-        key}) => filters.includes(key));
+    // filteredData = filteredData.filter(({
+    //     key}) => filters.includes(key));
+    Object.entries(filters).forEach(([key, value]) => {
+        filteredData = filteredData.filter(row => row[key] === value);
+       });
 
 // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
 }
 
 // 2. Attach an event to listen for changes to each filter
-d3.selectAll("#datetime").on("click",handleClick);
-d3.selectAll("#cityName").on("click",handleClick);
-d3.selectAll("#stateName").on("click",handleClick);
-d3.selectAll("#countryName").on("click",handleClick);
-d3.selectAll("#shapeType").on("click",handleClick);
+d3.selectAll("#datetime").on("change");
+d3.selectAll("#cityName").on("change");
+d3.selectAll("#stateName").on("change");
+d3.selectAll("#countryName").on("change");
+d3.selectAll("#shapeType").on("change");
 
 // Build the table when the page loads
 buildTable(tableData);
