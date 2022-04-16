@@ -3,42 +3,36 @@ Module 11
 
 ## Overview of the Analysis
 
-<!--
-
 Purpose of this project was to use UFO sighting provided and create a static web page that allows you to filter sighting results by specific parameters.  The page was built using javascript enhanced with D3, and html enhanced with bootstrap.
 
 ## Results
 
-From the tables below we can see:
+Construction of the table required reading the data.js file and loading it to a table via html.  This is done as a first step when the page is opened and this function is called:
 
-* PH has a disproportionate population of senior personnel retiring which includes engineers and staff
-* There is a very small population of managers retiring
-* Overall numbers of mentors is small relative to the retiring staff which would be an issue as even with one person have several mentorees they would still not be able to cover the retiring population
-* That disproportion gets even greater when looking at the senior engineers, where potential mentors are outnumbered by retirees by over 150 to 1
+![](https://github.com/lavec0324/UFO/blob/main/static/images/buildtable.PNG)
 
-#### Retirement eligible grouping by title:
+The functions code:
 
-![](https://github.com/lavec0324/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles.PNG)
+![](https://github.com/lavec0324/UFO/blob/main/static/images/buildtable_funct.PNG)
 
-#### Mentorship eligible grouping by title:
+As users select options on the filter list they update the filter boxes and the listener waits for a change in any of the elements:
 
-![](https://github.com/lavec0324/Pewlett-Hackard-Analysis/blob/main/Resources/mentor_eligible.PNG)
+![](https://github.com/lavec0324/UFO/blob/main/static/images/apply_change_listener.PNG)
+
+That listener invokes another function that stores the updated filters and aggregates to existing filters if they are present:
+
+![](https://github.com/lavec0324/UFO/blob/main/static/images/update_filter.PNG)
+
+Finally, the above will call a filtered table function to present the filtered results:
+
+![](https://https://github.com/lavec0324/UFO/blob/main/static/images/filter_updates.PNG)
 
 ## Summary
 
-Specifically answering two questions asked:
+One drawback of this webpage:
 
-* How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-  * 72,458 roles will need to be filled if all eligible retirees are to be replaced
-* Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-  * No, based on the current criteria, the number of mentors are far overshadowed by the number of retiring employees.
+* 
 
-Additional queries could include:
+Two additional recommendations:
 
-* Count of number of employees in the retirement table to simplify summing up the number of employees eligible for retirement.
-* Increase the date ranges of the mentors to expand the population of mentors.
-* Group by counts on mentors (already included but not originally requested)
-* Could also create queries to see what other roles were performed by employees, not just the current role, to see if mentorship can be expanded where gaps exist.
-
-
--->
+* 
